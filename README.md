@@ -5,6 +5,7 @@ For Random Things And Tests
 
 Ok, here comes a quick guide on How To use Git with Terminal Access (use Mintty):
 
+- Have a valid Token (https://github.com/settings/tokens)
 - Create a Repo on Github
 - Now open Mintty and cd into the folder where the working files are
 - "git init"
