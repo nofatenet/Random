@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalStorage Changes</title>
+
+    <script>
+        // Q:
+
+        // How do you remove a specific item from local storage? Say for instance I have an array of objects like this
+
+        // [
+        //     {"id": 1, "name": "Bob"},
+        //     {"id": 2, "name": "Alice"},
+        //     {"Id": 3, "name": "Paul"}
+        // ]
+
+        // I want to remove the object with the id 2 from local storage. I can't see a way to do that with removeItem() since it only accepts a key as an argument.
+
+
+        // A:
+
+        // Replace the arr with modified one:
+
+        // const arr = JSON.parse(localStorage.getItem('someKey'));
+        // const newArr = arr.filter(el => el.id !== 2);
+        // localStorage.setItem('someKey', JSON.stringify(newArr));
+    </script>
+</head>
+
+<body>
+    <a href="https://eloquentjavascript.net/Eloquent_JavaScript.pdf" target="_blank">A modern introduction to JavaScript</a>
+</body>
+
+</html>
