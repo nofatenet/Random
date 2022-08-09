@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="color-scheme" content="dark">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge in JS</title>
+    
+    <style>
+        summary {
+            cursor: pointer;
+        }
+    </style>
+
+    <script>
+        //Lösung:
+
+        const x = (y) => {
+            console.log("READY." + y);
+        };
+    </script>
+</head>
+
+<body>
+    <h1>Fragen über Web, HTML, CSS und Javascript.</h1>
+    
+    <p>Versuche die Fragen so gut es geht für dich zu beantworten, bevor du die Antworten anklickst.</p>
+    
+    <h2>Einsteiger Level:</h2>
+    
+    <strong>1. Was ist JavaScript?</strong>
+    
+    <details>
+        <summary>[Klick für Antwort]</summary>        
+        JavaScript ist eine leichtgewichtige, interpretierte Programmiersprache mit
+        Objekt-Orientierten Fähigkeiten(OOP), die es uns erlaubt Interaktivität auf ansonsten statischen Webseiten zu ermöglichen. Vorraussetzung um JS zu nutzen ist lediglich ein Browser.
+    </details>
+    <br/>
+    
+    <strong>2. Was ist der Unterschied zwischen Java und JavaScript?</strong>
+    <details>
+        <summary>[Klick für Antwort]</summary>        
+        Java Code muss kompiliert werden. Daraus kann dann z.B. ein ausführbares Programm werden. JavaScript Code wird interpretiert. Zum Beispiel im Browser. Heutzutage kann JS auch auf einem System interpretiert werden, z.B. mit NodeJS. Die Ähnlichkeit der Namen der Sprachen haben keinerlei technischen Gründe.
+    </details>
+    <br/>
+    
+    <strong>3. Welche Datentypen existieren in JavaScript?</strong>
+    <details>
+        <summary>[Klick für Antwort]</summary>        
+        <p>Folgende Datentypen:</p>
+        <p>
+                Undefined,
+                Null,
+                Boolean,
+                String,
+                Symbol,
+                Number,
+                Object
+        </p>
+    </details>
+    <br/>
+    
+    <strong>4. Was versteht man unter Responsive Webdesign?</strong>
+    <details>
+        <summary>[Klick für Antwort]</summary>        
+        <p>Derzeitiger Stand im Jahr 2022 ist, dass mehr Personen eine Webseite über mobile Geräte aufrufen, als über einem Desktop-Computer. Daher muss dafür gesorgt werden, dass die Seite ebenso auf kleinen, wie auf großen Screens gut dargestellt ist. Hierfür werden Breakpoints(z.B. Media Queries in CSS) verwendet. </p>
+    
+    </details>
+    <br/>
+    
+    <strong>5. Ist JavaScript "Case-Sensitive"? Was bedeutet das?</strong>
+    <details>
+        <summary>[Klick für Antwort]</summary>        
+        <p>Ja, JavaScript ist eine case sensitive Sprache. Die Keywords, Variablen, Funktionen-Namen, und andere Identifiers müssen immer konsistent in ihren kleinen oder großen Buchstaben geschrieben werden. Beispiel: "TEXT" ist eine andere Variable als "Text" oder "text" oder "tExT". </p>
+    
+    </details>
+    <br/>
+    
+        
+    <strong>6. Wie erstellen Sie ein Objekt in JavaScript?</strong>
+    <details>
+        <summary>[Klick für Antwort]</summary>        
+        <p>Sie können in JavaScript ein Objekt mit der "object literal" wie folgt erstellen: </p>
+        <code>
+        let person = {
+            name: "Anton",
+            age: 33
+        };
+        </code>
+    </details>
+    <br/>
+    
+    <strong>7. Wie erstellen Sie ein Array in JavaScript?</strong>
+    <details>
+        <summary>[Klick für Antwort]</summary>        
+        <p>Sie können in JavaScript ein Array mit der "array literal" wie folgt erstellen: </p>
+        <code>
+        let reihe = [1, 2, 3, 4];
+        </code>
+    </details>
+    <br/>
+    
+    <strong>8. Was ist der Scope von Variablen in JavaScript?</strong>
+    <details>
+        <summary>[Klick für Antwort]</summary>        
+        <p>Der Scope einer Variablen ist die "Region" des Programmes, in welcher sie definiert ist, und somit verwendbar ist. JavaScript kennt zwei Arten von Scopes:</p>
+        <p>• Globale Variable − Eine globale Variable ist überall im Code verfügbar.
+        </p>
+        <p>• Lokale Variable − Eine lokale Variable ist nur in der Funktion sichtbar in der sie definiert ist. Funktions-Parameter sind immer lokale Variablen.
+        </p>
+    </details>
+    <br/>
+    
+    
+    <strong>9. Welche Bedeutung hat der "This" Operator in JavaScript?</strong>
+    <details>
+        <summary>[Klick für Antwort]</summary>        
+        <p>Das Keyword "This" in JavaScript bezieht sich auf das Objekt zu welchem es gehört. "This" hat verschiedene Werte, abhängig davon, wo es verwendet wird. In einer Methode(= Funktion eines Objektes) bezieht sich "This" auf das Besitzende Objekt und in einer Funktion auf das globale Objekt.</p>
+    </details>
+    <br/>
+    
+    <strong>10. Was ist ein "Callback"?</strong>
+    <details>
+        <summary>[Klick für Antwort]</summary>        
+        <p>Ein Callback ist eine gewöhnliche JavaScript-Funktion, die an eine Methode als Argument oder Option übergeben wurde. Es ist eine Funktion, welche ausgeführt wird, wenn eine Andere Funktion ihre Ausführung beendet hat, daher der Name Call Back, Rückruf. Es klingt zunächst seltsam, aber Funktionen sind auch Variablen. Alles in JavaScript sind Objekte.</p>
+    </details>
+    <br/>
+    
+    <strong>11. Was ist der "Closure"? Geben Sie ein Beispiel.</strong>
+    <details>
+        <summary>[Klick für Antwort]</summary>        
+        <p>In JavaScript können, anders als bei manchen anderen Sprachen, Variablen ausserhalb einer Funktion definiert werden, und dann in der Funktion verwendet werden.
+        Man kann immer auf Variablen, die ausserhalb des Scope in dem man arbeitet liegen, zugreifen.
+        </p>
+        <p>Also: Closures werden erstellt wann immer eine Variable, die Ausserhalb erstellt wird, von einem inneren Scope verwendet wird. Um einen Closure zu verwendet, erstelle eine Funktion in einer Funktion. Die innere wird auf das Äussere zugreifen können.</p>
+    </details>
+    <br/>
+
+    
+
+
+
+
+    
+    
+    
+
+    
+    <hr/>
+    
+    <br/>
+    <p>Und wie immer folgenden Link:</p>
+    <a href="https://eloquentjavascript.net/Eloquent_JavaScript.pdf" target="_blank">A modern introduction to JavaScript</a>
+</body>
+
+</html>
